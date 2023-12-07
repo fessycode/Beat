@@ -170,5 +170,30 @@ form button:hover {
     margin: 0 10px;
 }
 
+.recommendations {
+    text-align: center;
+    padding: 2em;
+    background-color: #f4f4f4;
+}
+
+.recommendations h2 {
+    color: #333;
+}
+
+.recommendation-card {
+    margin-top: 20px;
+}
+
+.recommendation-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.recommendation-card p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
 
 

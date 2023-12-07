@@ -49,6 +49,21 @@
             <p class="user">- Onoh</p>
         </div>
     </section>
+    <section class="recommendations">
+        <h2>Personalized Recommendations</h2>
+        <div class="recommendation-card">
+            <img src="img/Holy.jpeg" alt="Recommendation">
+            <p>Holy</p>
+        </div>
+        <div class="recommendation-card">
+            <img src="img/deep_worship.jpeg" alt="Recommendation">
+            <p>Deep Worship</p>
+        </div>
+        <div class="recommendation-card">
+            <img src="img/New_Song.jpeg" alt="Recommendation">
+            <p>New Song</p>
+        </div>
+    </section>
     <section class="subscribe">
         <h2>Subscribe for Updates</h2>
         <form action="#" method="post">
@@ -68,5 +83,34 @@
     <footer>
         <p>&copy; 2023 Beatbuddy</p>
     </footer>
+    
+    <script>
+        // Simulating dynamic content for personalized recommendations
+        document.addEventListener('DOMContentLoaded', function () {
+            const recommendations = document.querySelector('.recommendations');
+
+            const recommendationData = [
+                { image: 'Holy.jpeg', title: 'Holy' },
+                { image: 'deep_worship.jpeg', title: 'Deep Worship' },
+                { image: 'New_Song.jpeg', title: 'New Song' },
+            ];
+
+            recommendationData.forEach(data => {
+                const card = document.createElement('div');
+                card.classList.add('recommendation-card');
+
+                const img = document.createElement('img');
+                img.src = data.image;
+                img.alt = 'Recommendation';
+
+                const p = document.createElement('p');
+                p.textContent = data.title;
+
+                card.appendChild(img);
+                card.appendChild(p);
+                recommendations.appendChild(card);
+         });
+     });
+    </script>
 </body>
 </html> 
