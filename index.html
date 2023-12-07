@@ -51,7 +51,7 @@
     </section>
     <section class="recommendations">
         <h2>Personalized Recommendations</h2>
-        <div class="recommendation-card">
+        <!--<div class="recommendation-card">
             <img src="img/Holy.jpeg" alt="Recommendation">
             <p>Holy</p>
         </div>
@@ -62,7 +62,7 @@
         <div class="recommendation-card">
             <img src="img/New_Song.jpeg" alt="Recommendation">
             <p>New Song</p>
-        </div>
+        </div>-->
     </section>
     <section class="subscribe">
         <h2>Subscribe for Updates</h2>
@@ -90,9 +90,9 @@
             const recommendations = document.querySelector('.recommendations');
 
             const recommendationData = [
-                { image: 'Holy.jpeg', title: 'Holy' },
-                { image: 'deep_worship.jpeg', title: 'Deep Worship' },
-                { image: 'New_Song.jpeg', title: 'New Song' },
+                { image: './img/Holy.jpeg', title: 'Holy' },
+                { image: './img/deep_worship.jpeg', title: 'Deep Worship' },
+                { image: './img/New_Song.jpeg', title: 'New Song' },
             ];
 
             recommendationData.forEach(data => {
